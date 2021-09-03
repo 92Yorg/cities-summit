@@ -47,124 +47,6 @@
     line-height: 1.2;
 }
 
-@media (max-width: 49.99em) {
-	.logo-wrapper {
-    position: relative;
-    height: 45vh;
-    margin: 10vh auto 3vh;
-    width: 48vh;
-}
-
-.logo-wrapper div {
-    position: absolute;
-    padding: 0 3vh;
-    display: inline-block;
-}
-
-.logo-wrapper div:nth-child(odd) {
-    color: #fff;
-    background-color: #000;
-}
-
-.logo-wrapper div:nth-child(even) {
-    color: #000;
-    background-color: #ffabb8;
-}
-
-.logo-wrapper div:nth-child(1) {
-    font-size: 13vw;
-    left: 54vw;
-    top: 5vw;
-    z-index: 3;
-}
-
-.logo-wrapper div:nth-child(2) {
-    font-size: 20vw;
-    top: 11vw;
-    left: 13vw;
-    z-index: 2;
-}
-
-.logo-wrapper div:nth-child(3) {
-    font-size: 16vw;
-    left: 22vw;
-    top: 33vw;
-    z-index: 1;
-}
-
-.hero-suffix {
-    background-color: #ffabb8;
-    padding: 3vh;
-}
-
-#cities-hero h2 {
-    font-size: 4vh;
-    line-height: 1.2;
-    /*position: absolute;*/
-    display: inline-block;
-}
-
-}
-
-
-
-@media (min-width: 50em) {
-	.logo-wrapper {
-	    position: relative;
-	    height: 45vh;
-	    margin: 10vh auto 3vh;
-	    width: 48vh;
-	}
-
-	.logo-wrapper div {
-	    position: absolute;
-	    padding: 0 3vh;
-	    display: inline-block;
-	}
-
-	.logo-wrapper div:nth-child(odd) {
-	    color: #fff;
-	    background-color: #000;
-	}
-
-	.logo-wrapper div:nth-child(even) {
-	    color: #000;
-	    background-color: #ffabb8;
-	}
-
-	.logo-wrapper div:nth-child(1) {
-	    font-size: 10vh;
-	    left: 32vh;
-	    z-index: 3;
-	}
-
-	.logo-wrapper div:nth-child(2) {
-	    font-size: 15vh;
-	    top: 4vh;
-	    left: 2vh;
-	    z-index: 2;
-	}
-
-	.logo-wrapper div:nth-child(3) {
-	    font-size: 12vh;
-	    left: 11vh;
-	    top: 20vh;
-	    z-index: 1;
-	}
-
-	.hero-suffix {
-	    background-color: #ffabb8;
-	    padding: 3vh;
-	}
-
-	#cities-hero h2 {
-	    font-size: 4vh;
-	    line-height: 1.2;
-	    /*position: absolute;*/
-	    display: inline-block;
-	}
-}
-
 
 
 .hero-block1 {
@@ -181,42 +63,33 @@
     position: relative;
 }
 
-#about .ms-hero__inner {
-	background-color: #000;
+#about .cities-block {
+    position: absolute;
+    height: 6vw;
+    width: 6vw;
+    display: none;
 }
 
-#about .cities-block1 {
+#about .cities-block.cities-block1 {
     background-color: #000;
-    height: 100px;
-    position: absolute;
-    width: 100px;
     left: 0;
     top: 0;
 }
 
-#about .cities-block2 {
+#about .cities-block.cities-block2 {
     background-color: #feaab8;
-    height: 100px;
-    position: absolute;
-    width: 100px;
-    left: 3vw;
-    top: 3vw;
+    left: 2vw;
+    top: 2vw;
 }
 
-#about .cities-block3 {
+#about .cities-block.cities-block3 {
     background-color: #feaab8;
-    height: 100px;
-    position: absolute;
-    width: 100px;
-    right: 3vw;
-    bottom: 3vw;
+    right: 2vw;
+    bottom: 2vw;
 }
 
-#about .cities-block4 {
+#about .cities-block.cities-block4 {
     background-color: #000;
-    height: 100px;
-    position: absolute;
-    width: 100px;
     right: 0;
     bottom: 0;
 }
@@ -224,6 +97,10 @@
 #panels {
     background-color: #feaab8;
     color: #000;
+}
+
+#panels h2 {
+    color: #a51d5d;
 }
 
 #speakers {
@@ -249,10 +126,15 @@ h1.bigNoodle {
     display: none;
 }
 
-/*hide this style if need to show times*/
 .o-2col--reversed .o-2col__primary {
     float: unset;
-    margin-left: 25%;
+    /*show this style if need to show times*//* margin-left: 25%; */
+}
+
+/*hide this style if need to show times*/
+.o-2col--reversed .o-2col__primary {
+    margin-left: 0;
+    width: auto;
 }
 
 /*SPEAKERS STYLES v1*/
@@ -307,41 +189,144 @@ h1.bigNoodle {
 }
 
 #speakers .logo-grid__item {
-    margin: 3% 1%;
+    margin: 3% 1% 0;
 }
 
 #speakers .logo__description {
-    padding: 15px 15px 10px 15px;
+    padding: 10px 15px 5px 15px;
     background-color: #feaab8;
-    position: absolute;
-    bottom: -30px;
+    position: relative;
+    bottom: 20px;
     width: 85%;
-    left: 40px;
+    left: 15%;
 }
 
 #speakers h5.bigNoodle {
-    font-size: 2vh;
+    font-size: 2.75vh;
+    line-height: 1;
 }
-</style>
 
+.logo-wrapper {
+    position: relative;
+    height: 45vh;
+    margin: 10vh auto 3vh;
+    width: 48vh;
+}
 
+.logo-wrapper div {
+    position: absolute;
+    padding: 0 3vh;
+    display: inline-block;
+}
 
+.logo-wrapper div:nth-child(odd) {
+    color: #fff;
+    background-color: #000;
+}
 
+.logo-wrapper div:nth-child(even) {
+    color: #000;
+    background-color: #ffabb8;
+}
 
+.logo-wrapper div:nth-child(1) {
+    font-size: 10vh;
+    left: 32vh;
+    z-index: 3;
+}
 
+.logo-wrapper div:nth-child(2) {
+    font-size: 15vh;
+    line-height: 1.1;
+    top: 5vh;
+    left: 2vh;
+    z-index: 2;
+}
 
+.logo-wrapper div:nth-child(3) {
+    font-size: 12vh;
+    left: 11vh;
+    top: 20vh;
+    z-index: 1;
+}
 
+@media (max-width: 30em) {
+    .logo-wrapper {
+        position: relative;
+        height: 68vw;
+        margin: 15vw auto 4.5vw;
+        width: 72vw;
+    }
 
+    .logo-wrapper div {
+        position: absolute;
+        padding: 0 4.5vw;
+        display: inline-block;
+    }
 
+    .logo-wrapper div:nth-child(odd) {
+        color: #fff;
+        background-color: #000;
+    }
 
+    .logo-wrapper div:nth-child(even) {
+        color: #000;
+        background-color: #ffabb8;
+    }
 
+    .logo-wrapper div:nth-child(1) {
+        font-size: 15vw;
+        left: 48vw;
+        z-index: 3;
+    }
 
+    .logo-wrapper div:nth-child(2) {
+        font-size: 24vw;
+        line-height: 1.1;
+        top: 7.5vw;
+        left: 1vw;
+        z-index: 2;
+    }
 
-<!-- styles to add -->
-<style type="text/css">
-	@media (max-width: 49.99em) {
-		.o-2col__primary {
-			margin-left: 0;
-		}
+    .logo-wrapper div:nth-child(3) {
+        font-size: 18vw;
+        left: 16vw;
+        top: 32vw;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 49.99em) {
+    .hero-suffix {
+        background-color: #ffabb8;
+        padding: 3vh;
+    }
+
+    #cities-hero h2 {
+        font-size: 4vh;
+        line-height: 1.2;
+        /*position: absolute;*/
+        display: inline-block;
+    }
+}
+
+@media (min-width: 50em) {
+	.hero-suffix {
+	    background-color: #ffabb8;
+	    padding: 3vh;
 	}
+	#cities-hero h2 {
+	    font-size: 4vh;
+	    line-height: 1.2;
+	    /*position: absolute;*/
+	    display: inline-block;
+	}
+    #about .ms-hero__inner {
+        background-color: #000;
+    }
+     #about .cities-block {
+        display: block;
+    }
+}
+
 </style>
