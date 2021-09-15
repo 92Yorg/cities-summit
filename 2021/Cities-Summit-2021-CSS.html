@@ -115,27 +115,31 @@ h1.bigNoodle {
     color: #fff;
 }
 
-.o-2col__secondary,
+.o-2col__primary, .o-2col__secondary {
+    margin-bottom: 0;
+}
+
+.o-2col__secondary {
+    color: #a51d5d;
+}
+
+/*hide .o-2col__secondary if need to show times*/
+/* .o-2col__secondary, */
 #panels a,
 #sponsors {
     display: none;
 }
 
 /*hide this style if need to show times*/
-#panels aside {
+/* #panels aside {
     display: none;
-}
-
-.o-2col--reversed .o-2col__primary {
-    float: unset;
-    /*show this style if need to show times*//* margin-left: 25%; */
-}
+} */
 
 /*hide this style if need to show times*/
-.o-2col--reversed .o-2col__primary {
+/* .o-2col--reversed .o-2col__primary {
     margin-left: 0;
     width: auto;
-}
+} */
 
 /*SPEAKERS STYLES v1*/
 
@@ -309,6 +313,9 @@ h1.bigNoodle {
         /*position: absolute;*/
         display: inline-block;
     }
+    .o-2col__primary, .o-2col__secondary {
+        padding-top: 10px;
+    }
 }
 
 @media (min-width: 50em) {
@@ -327,6 +334,10 @@ h1.bigNoodle {
     }
      #about .cities-block {
         display: block;
+    }
+    .o-2col--reversed .o-2col__primary {
+    float: unset;
+    margin-left: 30%;/*show this style if need to show times*/
     }
 }
 
