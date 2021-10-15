@@ -1,61 +1,65 @@
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet preload" />
-<noscript>
-    <style>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  rel="stylesheet preload"
+/><noscript>
+  <style>
     .logo-wrapper .wow:not(.animated) {
-        display: block;
+      display: block;
     }
-    </style>
+  </style>
 </noscript>
 <style type="text/css">
-/*FONT STYLES*/
+  /*FONT STYLES*/
 
-@font-face {
+  @font-face {
     font-family: "bigNoodle";
-    src: url(/92StreetY/media/MEDIA/Fonts/big_noodle_titling.ttf) format('truetype');
+    src: url(/92StreetY/media/MEDIA/Fonts/big_noodle_titling.ttf)
+      format("truetype");
     font-display: swap;
-}
+  }
 
-@font-face {
+  @font-face {
     font-family: "bigNoodleOblique";
-    src: url(/92StreetY/media/MEDIA/Fonts/big_noodle_titling_oblique.ttf) format('truetype');
+    src: url(/92StreetY/media/MEDIA/Fonts/big_noodle_titling_oblique.ttf)
+      format("truetype");
     font-display: swap;
-}
+  }
 
-.bigNoodle {
+  .bigNoodle {
     font-family: bigNoodle !important;
-}
+  }
 
-/*HERO STYLES*/
+  /*HERO STYLES*/
 
-#cities-hero {
+  #cities-hero {
     background-image: url(/92StreetY/media/img/Summits/Cities-Summit/2021/Hero/abstract-buildings.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     overflow: hidden;
     position: relative;
-}
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    -webkit-background-attachment: initial;
+    background-attachment: fixed;
+  }
 
-#cities-hero,
-#video {
+  #cities-hero,
+  #video {
     background-color: #ffabb8;
-}
+  }
 
-.logo-wrapper.bigNoodle {
+  .logo-wrapper.bigNoodle {
     text-transform: uppercase;
     line-height: 1.2;
-}
+  }
 
-
-
-.hero-block1 {
+  .hero-block1 {
     background-color: #ffabb8;
     width: 75vh;
     height: 3vh;
-}
+  }
 
-.logo-wrapper .hero-suffix {
+  .logo-wrapper .hero-suffix {
     /* display: inline-block;
     background-color: #ffabb8;
     padding: 1vh 3vh; */
@@ -65,104 +69,104 @@
     height: 12vh;
     left: 8.5vh;
     top: 38vh;
-}
+  }
 
-#cities-hero h2 {
+  #cities-hero h2 {
     color: #fff;
     font-size: 4vh;
     line-height: 1.2;
     /* display: inline-block; */
-}
+  }
 
-/*GENERAL STYLES*/
+  /*GENERAL STYLES*/
 
-#about {
+  #about {
     background-color: #a51d5d;
     color: #fff;
     position: relative;
-}
+  }
 
-#about .cities-block {
+  #about .cities-block {
     position: absolute;
     height: 6vw;
     width: 6vw;
     display: none;
-}
+  }
 
-#about .cities-block.cities-block1 {
+  #about .cities-block.cities-block1 {
     background-color: #000;
     left: 0;
     top: 0;
-}
+  }
 
-#about .cities-block.cities-block2 {
+  #about .cities-block.cities-block2 {
     background-color: #feaab8;
     left: 2vw;
     top: 2vw;
-}
+  }
 
-#about .cities-block.cities-block3 {
+  #about .cities-block.cities-block3 {
     background-color: #feaab8;
     right: 2vw;
     bottom: 2vw;
-}
+  }
 
-#about .cities-block.cities-block4 {
+  #about .cities-block.cities-block4 {
     background-color: #000;
     right: 0;
     bottom: 0;
-}
+  }
 
-#panels {
+  #panels {
     background-color: #feaab8;
     color: #000;
-}
+  }
 
-/* #panels h2 {
+  /* #panels h2 {
     color: #a51d5d;
 } */
 
-#speakers {
+  #speakers {
     background-color: #0d1a42;
-}
+  }
 
-h1.bigNoodle {
+  h1.bigNoodle {
     font-size: 6vh;
-}
+  }
 
-#speakers .ms-hero__title {
+  #speakers .ms-hero__title {
     color: #fff;
-}
+  }
 
-.o-2col__primary, .o-2col__secondary {
+  .o-2col__primary,
+  .o-2col__secondary {
     margin-bottom: 0;
-}
+  }
 
-.o-2col__secondary {
+  .o-2col__secondary {
     color: #a51d5d;
-}
+  }
 
-/*hide .o-2col__secondary if need to show times*/
-.o-2col__secondary,
-#panels a,
-#sponsors {
+  /*hide .o-2col__secondary if need to show times*/
+  .o-2col__secondary,
+  #panels a {
     display: none;
-}
+  }
 
-/*hide this style if need to show times*/
-#panels aside {
+  /*hide this style if need to show times*/
+  #panels aside {
     display: none;
-}
+  }
 
-/*hide this style if need to show times*/
-.o-2col--reversed .o-2col__primary {
+  /*hide this style if need to show times*/
+  .o-2col--reversed .o-2col__primary {
     margin-left: 0;
     width: auto;
-}
+  }
 
-/*SPEAKERS STYLES v1*/
+  /*SPEAKERS STYLES v1*/
 
-/*
+  /*
 #speakers .logo {
 	background-color: #ff715b;
 	position: relative;
@@ -199,59 +203,58 @@ h1.bigNoodle {
 
 */
 
-/*SPEAKERS STYLES v2*/
+  /*SPEAKERS STYLES v2*/
 
-
-#speakers .logo {
+  #speakers .logo {
     background-color: transparent;
     position: relative;
-}
+  }
 
-#speakers .logo__image {
+  #speakers .logo__image {
     max-width: 90%;
     display: block;
-}
+  }
 
-#speakers .logo-grid__item {
+  #speakers .logo-grid__item {
     margin: 3% 1% 0;
-}
+  }
 
-#speakers .logo__description {
+  #speakers .logo__description {
     padding: 10px 15px 5px 15px;
     background-color: #feaab8;
     position: relative;
     bottom: 20px;
     width: 85%;
     left: 15%;
-}
+  }
 
-#speakers h5.bigNoodle {
+  #speakers h5.bigNoodle {
     font-size: 2.75vh;
     line-height: 1;
-}
+  }
 
-.logo-wrapper {
+  .logo-wrapper {
     position: relative;
     margin: 10vh auto 3vh;
     width: 48vh;
     height: 46vh;
-}
+  }
 
-.logo-wrapper div {
-    color: #FFF;
+  .logo-wrapper div {
+    color: #fff;
     background-color: #000;
     position: absolute;
     padding: 0 3vh;
     display: inline-block;
-}
+  }
 
-.logo-wrapper div:nth-child(1) {
+  .logo-wrapper div:nth-child(1) {
     font-size: 10vh;
     left: 32vh;
     z-index: 3;
-}
+  }
 
-.logo-wrapper div:nth-child(2) {
+  .logo-wrapper div:nth-child(2) {
     color: #000;
     background-color: #ffabb8;
     font-size: 15vh;
@@ -259,88 +262,96 @@ h1.bigNoodle {
     top: 5vh;
     left: 2vh;
     z-index: 2;
-}
+  }
 
-.logo-wrapper div:nth-child(3) {
+  .logo-wrapper div:nth-child(3) {
     font-size: 12vh;
     left: 11vh;
     top: 20vh;
     z-index: 1;
-}
+  }
 
-@media (max-width: 30em) {
+  .sponsor-block {
+    border: none;
+  }
+
+  .sponsor-block:hover {
+    border-bottom-style: none !important;
+  }
+
+  @media (max-width: 30em) {
     .logo-wrapper {
-        position: relative;
-        height: 68vw;
-        margin: 15vw auto 4.5vw;
-        width: 72vw;
+      position: relative;
+      height: 68vw;
+      margin: 15vw auto 4.5vw;
+      width: 72vw;
     }
 
     .logo-wrapper div {
-        color: #fff;
-        background-color: #000;
-        position: absolute;
-        padding: 0 4.5vw;
-        display: inline-block;
+      color: #fff;
+      background-color: #000;
+      position: absolute;
+      padding: 0 4.5vw;
+      display: inline-block;
     }
 
     .logo-wrapper div:nth-child(1) {
-        font-size: 15vw;
-        left: 48vw;
-        z-index: 3;
+      font-size: 15vw;
+      left: 48vw;
+      z-index: 3;
     }
 
     .logo-wrapper div:nth-child(2) {
-        color: #000;
-        background-color: #ffabb8;
-        font-size: 24vw;
-        line-height: 1.1;
-        top: 7.5vw;
-        left: 1vw;
-        z-index: 2;
+      color: #000;
+      background-color: #ffabb8;
+      font-size: 24vw;
+      line-height: 1.1;
+      top: 7.5vw;
+      left: 1vw;
+      z-index: 2;
     }
 
     .logo-wrapper div:nth-child(3) {
-        font-size: 18vw;
-        left: 16vw;
-        top: 32vw;
-        z-index: 1;
+      font-size: 18vw;
+      left: 16vw;
+      top: 32vw;
+      z-index: 1;
     }
     .logo-wrapper .hero-suffix {
-        left: 0;
-        top: 58vw;
-        position: relative;
-        display: block;
-        text-align: center;
+      left: 0;
+      top: 58vw;
+      position: relative;
+      display: block;
+      text-align: center;
     }
     #cities-hero h2 {
-        font-size: 3.5vh;
+      font-size: 3.5vh;
     }
-}
+  }
 
-@media (max-width: 49.99em) {
-    .o-2col__primary, .o-2col__secondary {
-        padding-top: 10px;
+  @media (max-width: 49.99em) {
+    .o-2col__primary,
+    .o-2col__secondary {
+      padding-top: 10px;
     }
-}
+  }
 
-@media (min-width: 50em) {
-	/* .hero-suffix {
+  @media (min-width: 50em) {
+    /* .hero-suffix {
 	    background-color: #ffabb8;
 	    padding: 3vh;
         position: relative;
         z-index: 1;
 	} */
     #about .ms-hero__inner {
-        background-color: #000;
+      background-color: #000;
     }
-     #about .cities-block {
-        display: block;
+    #about .cities-block {
+      display: block;
     }
     .o-2col--reversed .o-2col__primary {
-    float: unset;
-    /*margin-left: 30%;*//*show this style if need to show times*/
+      float: unset;
+      /*margin-left: 30%;*/ /*show this style if need to show times*/
     }
-}
-
+  }
 </style>
